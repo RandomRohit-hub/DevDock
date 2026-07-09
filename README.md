@@ -1,56 +1,322 @@
 <div align="center">
 
-<h1>🚀 DevDock</h1>
-<p><strong>AI-Powered Developer Workspace Manager for Windows 11</strong></p>
+# ⚓ DevDock
+
+### **Your Downloads Folder. Finally Under Control.**
+
+**AI-Powered Developer Workspace Manager for Windows 11**
 
 <p>
-  <img src="https://img.shields.io/badge/Python-3.10%2B-blue?style=for-the-badge&logo=python&logoColor=white"/>
-  <img src="https://img.shields.io/badge/FastAPI-0.111-009688?style=for-the-badge&logo=fastapi&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Groq-AI-f55036?style=for-the-badge&logo=groq&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Windows-11-0078D4?style=for-the-badge&logo=windows&logoColor=white"/>
-  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge"/>
+Automatically organize developer files, projects, SSH keys, cloud configurations, documents, and downloads using intelligent rules + AI — all running silently in the background.
 </p>
 
-<p>DevDock silently watches your Downloads folder, automatically classifies every file using rules + Groq AI, organizes it into a structured hierarchy, detects duplicates and sensitive files, and gives you a beautiful local web dashboard — all in the background like OneDrive or Windows Defender.</p>
+<p>
 
-![DevDock Dashboard](https://raw.githubusercontent.com/RandomRohit-hub/DevDock/main/docs/dashboard-preview.png)
+<img src="https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
+
+<img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white"/>
+
+<img src="https://img.shields.io/badge/Groq-AI-f55036?style=for-the-badge"/>
+
+<img src="https://img.shields.io/badge/Windows-11-0078D4?style=for-the-badge&logo=windows&logoColor=white"/>
+
+<img src="https://img.shields.io/badge/License-MIT-success?style=for-the-badge"/>
+
+</p>
+
+> **Download it. Forget about it. DevDock does the rest.**
+
+---
+
+### 🎬 Demo
+
+> *(Replace with your demo GIF later)*
+
+![DevDock Demo](docs/devdock-demo.gif)
 
 </div>
 
 ---
 
-## ✨ Features
+# 🤔 Ever downloaded...
 
-| Feature | Description |
-|---|---|
-| 🔍 **Real-Time Monitoring** | Watchdog event-based monitoring — zero CPU when idle |
-| 🧠 **AI Classification** | Groq LLM classifies ambiguous files (resumes, invoices, research papers) |
-| 📁 **Auto Organization** | Moves files into structured folders: DevOps, Programming, Projects, etc. |
-| 🔒 **Sensitive File Detection** | Flags `.pem`, SSH keys, AWS credentials before moving |
-| 🔄 **Duplicate Detection** | SHA-256 hashing — skip, rename, replace, or keep both |
-| 📦 **Project Detection** | Detects Node/Python/Rust/Go projects inside downloaded archives |
-| 🔁 **Restore Feature** | Every move is reversible from the dashboard |
-| 📋 **Daily Logs** | Structured TXT logs at `logs/YYYY/Month/YYYY-MM-DD.txt` |
-| 📊 **Web Dashboard** | Local React SPA at `http://localhost:8000` with Chart.js charts |
-| 🖥️ **System Tray** | Runs silently — pause, resume, organize, exit from tray |
-| 🔔 **Notifications** | Native Windows 11 toast notifications |
-| ⚙️ **Custom Rules** | Define your own rules — no coding needed |
-| 🚀 **Startup Recovery** | Organizes everything downloaded while DevDock was offline |
+* 🔑 SSH Keys
+* ☁️ AWS PEM Files
+* 🐳 Dockerfiles
+* ☸ Kubernetes YAMLs
+* 📦 GitHub Projects
+* 📄 PDFs
+* 🎓 College Notes
+* 🖼 Screenshots
+* 📜 Certificates
+* 📁 ZIP Archives
+
+...and then spent **10 minutes searching for them later?**
+
+### Meet **DevDock**.
+
+DevDock is an intelligent Windows application that watches your **Downloads** folder in real time.
+
+It automatically detects what you downloaded, understands what it is, creates the required folders if needed, organizes everything, keeps detailed logs, and updates a beautiful dashboard.
+
+No manual sorting.
+
+No messy Downloads folder.
+
+No wasted time.
 
 ---
 
-## 📋 Requirements
+# 😵 Before DevDock
 
-- **Windows 10 / 11**
-- **Python 3.10 or higher** → [Download Python](https://www.python.org/downloads/)
-- **Groq API Key** (free) → [Get yours at console.groq.com](https://console.groq.com)
-- Git (optional, for cloning)
+```text
+Downloads/
+
+resume_final.pdf
+resume_final_final.pdf
+id_rsa
+terraform.tf
+Dockerfile
+Screenshot (245).png
+notes.pdf
+invoice.pdf
+movie.mp4
+project.zip
+another_project.zip
+```
+
+# 😎 After DevDock
+
+```text
+Downloads/
+
+Documents/
+Images/
+Videos/
+Projects/
+
+Programming/
+    Python/
+    Java/
+    JavaScript/
+
+DevOps/
+    AWS/
+    Docker/
+    Kubernetes/
+    Terraform/
+    SSH Keys/
+
+Certificates/
+
+Archives/
+```
 
 ---
 
-## ⚡ Quick Start
+# ✨ Features
 
-### 1. Clone the repository
+## ⚡ Real-Time Monitoring
+
+DevDock watches your Downloads folder using native Windows file events.
+
+The moment a file is downloaded...
+
+DevDock immediately organizes it.
+
+---
+
+## 🧠 Intelligent Classification
+
+Uses a hybrid classification engine.
+
+### Rule-Based Detection
+
+Perfect for:
+
+* Docker
+* Terraform
+* Kubernetes
+* AWS
+* SSH Keys
+* Programming Files
+* Images
+* Videos
+* Archives
+
+Fast.
+
+Offline.
+
+No API calls.
+
+---
+
+### 🤖 AI Classification (Groq)
+
+When DevDock isn't sure...
+
+Groq AI understands documents like:
+
+* Resume
+* Invoice
+* Certificate
+* Research Paper
+* College Notes
+* Personal Documents
+
+It returns:
+
+* Category
+* Confidence Score
+* Reason
+
+---
+
+## 📦 Smart Project Detection
+
+Downloaded a ZIP?
+
+DevDock detects:
+
+* Python
+* Node.js
+* Java
+* Rust
+* Go
+
+Automatically creates the correct project workspace.
+
+---
+
+## 🔒 Sensitive File Protection
+
+Automatically detects:
+
+* SSH Keys
+* AWS Credentials
+* Private Keys
+* Certificates
+* Password Files
+* Environment Files
+
+Sensitive files are highlighted inside the dashboard.
+
+---
+
+## 📋 Daily Logs
+
+Every action is recorded.
+
+TXT Logs
+
+```text
+logs/
+
+2026/
+    July/
+        2026-07-09.txt
+```
+
+SQLite Database
+
+Every move.
+
+Every classification.
+
+Every AI decision.
+
+Nothing gets lost.
+
+---
+
+## 📊 Local Dashboard
+
+Runs locally.
+
+```
+http://localhost:8000
+```
+
+Dashboard includes:
+
+* 📈 Statistics
+* 📂 File History
+* 🔍 Search
+* 📊 Charts
+* 🧠 AI Decisions
+* 📋 Activity Logs
+* 📦 Duplicate Files
+* ⚙ Settings
+
+---
+
+## 🔁 Startup Recovery
+
+Forgot to run DevDock yesterday?
+
+No worries.
+
+When DevDock starts:
+
+✔ Scans Downloads
+
+✔ Finds missed files
+
+✔ Organizes everything
+
+✔ Starts monitoring again
+
+Nothing is ever missed.
+
+---
+
+# ⚙️ How DevDock Works
+
+```text
+               Windows Starts
+                      │
+                      ▼
+             DevDock Starts
+                      │
+                      ▼
+         Scan Existing Downloads
+                      │
+                      ▼
+        Start Real-Time Monitoring
+                      │
+                      ▼
+          New File Downloaded
+                      │
+                      ▼
+        Rule-Based Classification
+                │
+      Match? ───┤
+        │       │
+      Yes       No
+        │       │
+        ▼       ▼
+   Organize   Groq AI
+        │       │
+        └───┬───┘
+            ▼
+    Intelligent Organizer
+            │
+      ┌─────┼──────────┐
+      ▼     ▼          ▼
+
+ SQLite   TXT Logs   Notification
+
+            │
+            ▼
+     Dashboard Updates
+```
+
+---
+
+# 🚀 Quick Start
+
+### 1. Clone
 
 ```bash
 git clone https://github.com/RandomRohit-hub/DevDock.git
@@ -63,281 +329,160 @@ cd DevDock
 pip install -r requirements.txt
 ```
 
-### 3. Run DevDock
+### 3. Add your Groq API key
 
-**Option A — Double-click** `start.bat`
+```bash
+cp .env.example .env
+```
 
-**Option B — Terminal:**
+Edit `.env`:
+
+```env
+GROQ_API_KEY=your_groq_api_key_here
+```
+
+Get a free key at → [console.groq.com](https://console.groq.com)
+
+### 4. Run
+
 ```bash
 cd backend
 python main.py
 ```
 
-### 4. Open the Dashboard
+Or double-click **`start.bat`**
 
-DevDock automatically opens your browser to:
+### 5. Open Dashboard
+
 ```
 http://localhost:8000
 ```
 
 ---
 
-## 🔑 Adding Your Groq API Key
+# 🚀 DevDock at a Glance
 
-1. Go to [console.groq.com](https://console.groq.com) → create a free account → copy your API key
-2. Open the dashboard at `http://localhost:8000`
-3. Click **Settings** in the left sidebar
-4. Paste your key into **Groq API Key** and click **Save Settings**
-
-> **Without a Groq key**, DevDock still works perfectly — it uses rule-based classification for all common file types. Groq AI is only called for ambiguous documents like resumes, invoices, and research papers.
-
----
-
-## 📂 What DevDock Creates
-
-DevDock automatically creates this folder structure inside your Downloads folder:
-
-```
-Downloads/
-├── Documents/
-├── Images/
-├── Videos/
-├── Music/
-├── Archives/
-├── Certificates/
-├── Datasets/
-├── AI/
-├── Others/
-│
-├── Programming/
-│   ├── Python/        ← .py, requirements.txt, setup.py
-│   ├── JavaScript/    ← .js, .jsx, package.json
-│   ├── TypeScript/    ← .ts, .tsx, tsconfig.json
-│   ├── Go/            ← .go, go.mod
-│   ├── Rust/          ← .rs, Cargo.toml
-│   ├── Java/          ← .java, pom.xml, build.gradle
-│   ├── C++/           ← .cpp, .c, .h
-│   ├── C#/            ← .cs, .csproj
-│   ├── PHP/           ← .php
-│   └── Other/
-│
-├── DevOps/
-│   ├── AWS/           ← *.pem, credentials
-│   ├── Docker/        ← Dockerfile, docker-compose.yml
-│   ├── Kubernetes/    ← deployment.yaml, kubeconfig
-│   ├── Terraform/     ← *.tf, *.tfvars
-│   ├── SSH Keys/      ← id_rsa, id_ed25519, *.pub
-│   ├── Azure/
-│   ├── GCP/
-│   ├── Linux/
-│   ├── Certificates/
-│   └── Configs/
-│
-└── Projects/
-    ├── Python/        ← Archives containing requirements.txt
-    ├── Node/          ← Archives containing package.json
-    ├── Java/          ← Archives containing pom.xml
-    ├── Rust/          ← Archives containing Cargo.toml
-    ├── Go/            ← Archives containing go.mod
-    └── Git Repositories/
-```
+* ⚡ Real-Time Monitoring
+* 🧠 AI File Classification
+* 📂 Automatic Folder Creation
+* ☁️ DevOps File Detection
+* 💻 Programming File Detection
+* 📦 Project Detection
+* 🔒 Sensitive File Detection
+* 🔁 Restore Files
+* 📋 Daily TXT Logs
+* 🗄 SQLite Database
+* 📊 Analytics Dashboard
+* 🔔 Windows Notifications
+* 🖥 System Tray Support
+* 🚀 Startup Recovery
+* ⚙ Custom Rules
 
 ---
 
-## 🧠 How Classification Works
+# 💻 Tech Stack
 
-```
-New file arrives in Downloads
-         │
-         ▼
-① Custom Rules      ── your own rules from Settings
-         │ no match
-         ▼
-② Rule-Based        ── extension, filename, pattern matching
-   Classifier          (instant, no API call)
-         │ no match
-         ▼
-③ Groq AI           ── reads file snippet → returns JSON
-   Classifier          { category, confidence, reason }
-         │
-         ▼
-File moved to correct subfolder
-```
+### Desktop
 
-**Rule-based classification handles ~90% of files instantly.** Groq AI is only called for ambiguous documents.
+* 🐍 Python
+* 👀 Watchdog
+* 📁 PyStray
+* 🔔 Winotify
 
----
+### Backend
 
-## 🖥️ Dashboard Pages
+* ⚡ FastAPI
+* 🗄 SQLite
 
-| Page | Description |
-|---|---|
-| **Home** | Stats cards, category doughnut chart, weekly activity bar chart, recent activity feed |
-| **All Files** | Searchable, filterable table of every organized file with restore button |
-| **Duplicate Files** | SHA-256 grouped duplicate file list |
-| **Activity Logs** | Full audit trail of every action DevDock took |
-| **Settings** | Groq API key, duplicate handling, notifications, custom rules |
+### Frontend
 
----
+* ⚛ React (CDN)
+* 🎨 Tailwind CSS (CDN)
+* 📊 Chart.js (CDN)
 
-## ⚙️ Custom Rules
+### AI
 
-Create your own rules in the **Settings** page — no coding needed.
+* 🧠 Groq API (`llama-3.3-70b-versatile`)
 
-**Examples:**
+### Utilities
 
-| Condition | Value | Destination |
-|---|---|---|
-| filename contains | `leetcode` | `Programming/DSA` |
-| extension equals | `.csv` | `Datasets` |
-| filename starts with | `invoice` | `Documents/Invoices` |
+* python-dotenv
+* Pillow
+* PyPDF2
+* python-docx
+* Hashlib
+* Zipfile
 
 ---
 
-## 🔒 Sensitive File Handling
+# 📁 Project Structure
 
-DevDock automatically detects and flags these files before moving:
-
-- Private SSH keys (`id_rsa`, `id_ed25519`, `id_ecdsa`)
-- AWS credentials and `.pem` files
-- Files containing `password`, `secret`, `api_key` in name
-- Files whose content contains private key headers
-
-Sensitive files are moved to their correct location **and** flagged with a 🔒 badge in the dashboard.
-
----
-
-## 🔁 Restoring Files
-
-Every file DevDock moves can be sent back to its original location:
-
-1. Go to **All Files** in the dashboard
-2. Find the file
-3. Click **Restore**
-
----
-
-## 🛠️ System Tray
-
-Right-click the DevDock icon in the Windows System Tray:
-
-| Option | Action |
-|---|---|
-| 🌐 Open Dashboard | Opens `http://localhost:8000` in browser |
-| ⚡ Organize Now | Manual scan of monitored folders |
-| ⏸ Pause Monitoring | Temporarily stop file watching |
-| ▶ Resume Monitoring | Resume after pause |
-| 📋 Open Logs Folder | Opens the logs directory in Explorer |
-| ⚙ Settings | Opens Settings page in browser |
-| ✕ Exit DevDock | Gracefully stops all services |
-
----
-
-## 📁 Project Structure
-
-```
+```text
 DevDock/
-├── start.bat                  ← Launch script (double-click to run)
-├── requirements.txt           ← Python dependencies
-├── .gitignore
-│
-└── backend/
-    ├── main.py                ← Entry point & orchestrator
-    ├── config.py              ← Settings, rules, folder structure
-    ├── database.py            ← SQLite persistence
-    ├── logger.py              ← Daily TXT log writer
-    ├── organizer.py           ← Core file pipeline
-    ├── watcher.py             ← Watchdog real-time monitor
-    ├── classifier.py          ← Rule-based classifier
-    ├── groq_classifier.py     ← Groq AI fallback classifier
-    ├── duplicate_detector.py  ← SHA-256 duplicate detection
-    ├── security.py            ← Sensitive file detection
-    ├── project_detector.py    ← Archive project detection
-    ├── dashboard.py           ← FastAPI REST API (20+ endpoints)
-    ├── notifications.py       ← Windows toast notifications
-    ├── tray.py                ← System tray icon
-    └── static/
-        └── index.html         ← React SPA dashboard
+
+backend/
+    main.py
+    watcher.py
+    classifier.py
+    groq_classifier.py
+    organizer.py
+    project_detector.py
+    duplicate_detector.py
+    database.py
+    logger.py
+    dashboard.py
+    notifications.py
+    tray.py
+    security.py
+    config.py
+    static/
+        index.html
+
+.env.example
+requirements.txt
+start.bat
 ```
 
 ---
 
-## 🔌 API Reference
+# 🛣 Roadmap
 
-DevDock exposes a full REST API at `http://localhost:8000/api/`
-
-```
-GET  /api/status          → Watcher status
-GET  /api/stats           → Dashboard statistics
-GET  /api/files           → File records (search, filter, paginate)
-POST /api/organize/now    → Trigger manual scan
-POST /api/restore         → Restore file to original location
-GET  /api/rules           → Custom rules
-POST /api/rules           → Create custom rule
-GET  /api/settings        → Current settings
-PUT  /api/settings        → Update settings
-POST /api/watcher/pause   → Pause monitoring
-POST /api/watcher/resume  → Resume monitoring
-GET  /api/duplicates      → Duplicate file groups
-GET  /api/logs            → List log files
-POST /api/reports/weekly  → Generate weekly report
-```
-
-Full interactive docs: `http://localhost:8000/docs`
+* ✅ Real-Time Monitoring
+* ✅ AI Classification
+* ✅ Dashboard
+* ✅ Duplicate Detection
+* ✅ Startup Recovery
+* ✅ DevOps Detection
+* ✅ Sensitive File Protection
+* ✅ Custom Rules
+* ✅ Restore Feature
+* ⏳ VS Code Integration
+* ⏳ GitHub Integration
+* ⏳ Plugin System
+* ⏳ Cloud Backup
+* ⏳ Cross Platform Support
+* ⏳ OneDrive Integration
 
 ---
 
-## 🧱 Tech Stack
+# 🌟 Why DevDock?
 
-| Layer | Technology | Why |
-|---|---|---|
-| Language | Python 3.13 | Rich ecosystem, OS integration, file I/O |
-| API Server | FastAPI + Uvicorn | Fastest Python async framework |
-| File Monitoring | Watchdog | OS-native events, zero CPU when idle |
-| Database | SQLite | Zero config, single file, WAL concurrency |
-| AI | Groq API (llama-3.3-70b) | Fastest LLM inference (~200ms responses) |
-| Document Parsing | PyPDF2, python-docx | Text extraction for AI classification |
-| System Tray | pystray + Pillow | Native Win32 system tray integration |
-| Notifications | winotify | Native Windows 11 toast notifications |
-| Dashboard UI | React 18 + Chart.js | CDN-loaded, no build step needed |
-| Styling | Tailwind CSS CDN | Utility-first, no build tooling |
+Because developers should spend their time writing code...
 
----
+not cleaning the Downloads folder.
 
-## 🐛 Troubleshooting
-
-**Dashboard doesn't open?**
-```bash
-# Check if port 8000 is free
-netstat -ano | findstr :8000
-# Run manually
-cd backend && python main.py
-```
-
-**Files not being organized?**
-- Check that your Downloads folder path is correct in Settings
-- Ensure DevDock is not paused (check System Tray)
-- Run "Organize Now" from the tray or dashboard
-
-**Groq AI not working?**
-- Verify your API key in Settings
-- Check your Groq account at [console.groq.com](https://console.groq.com)
-- DevDock falls back to rule-based classification automatically
-
-**pystray / tray icon error?**
-```bash
-pip install pystray Pillow --upgrade
-```
-
----
-
-## 📄 License
-
-MIT License — free to use, modify, and distribute.
+DevDock quietly handles the boring work while you focus on building great software.
 
 ---
 
 <div align="center">
-  <p>Built with ❤️ for developers who hate messy Downloads folders</p>
-  <p><strong>⭐ Star this repo if DevDock saved your sanity!</strong></p>
+
+## ⭐ Enjoying DevDock?
+
+If DevDock made your workflow cleaner, consider giving this repository a **⭐ Star**.
+
+It helps others discover the project and supports future development.
+
+### **Less time organizing files. More time shipping code. 🚀**
+
 </div>
