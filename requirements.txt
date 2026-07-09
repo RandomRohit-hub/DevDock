@@ -1,0 +1,32 @@
+# DevDock Python Dependencies
+
+# Core
+fastapi>=0.111.0
+uvicorn[standard]>=0.29.0
+pydantic>=2.7.0
+
+# File monitoring
+watchdog>=4.0.0
+
+# Database
+# (sqlite3 is built-in)
+
+# AI / Groq
+groq>=0.9.0
+
+# Notifications
+winotify>=1.1.0
+
+# System Tray
+pystray>=0.19.5
+Pillow>=10.3.0
+
+# Document parsing
+PyPDF2>=3.0.1
+python-docx>=1.1.2
+
+# Scheduling
+schedule>=1.2.2
+
+# Utilities
+python-multipart>=0.0.9
