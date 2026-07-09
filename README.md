@@ -26,17 +26,7 @@ Automatically organize developer files, projects, SSH keys, cloud configurations
 
 > **Download it. Forget about it. DevDock does the rest.**
 
----
 
-### 🎬 Demo
-
-> *(Replace with your demo GIF later)*
-
-![DevDock Demo](docs/devdock-demo.gif)
-
-</div>
-
----
 
 # 🤔 Ever downloaded...
 
