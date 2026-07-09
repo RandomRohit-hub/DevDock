@@ -2,105 +2,52 @@
 
 # ⚓ DevDock
 
-### **Your Downloads Folder. Finally Under Control.**
+### AI-Powered Developer Workspace Manager for Windows 11
 
-**AI-Powered Developer Workspace Manager for Windows 11**
+Automatically organize your Downloads folder using intelligent rules and AI.
 
-<p>
-Automatically organize developer files, projects, SSH keys, cloud configurations, documents, and downloads using intelligent rules + AI — all running silently in the background.
-</p>
+No manual sorting. No clutter. No lost files.
 
 <p>
 
-<img src="https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
-
-<img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white"/>
-
-<img src="https://img.shields.io/badge/Groq-AI-f55036?style=for-the-badge"/>
-
-<img src="https://img.shields.io/badge/Windows-11-0078D4?style=for-the-badge&logo=windows&logoColor=white"/>
-
-<img src="https://img.shields.io/badge/License-MIT-success?style=for-the-badge"/>
+![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+![Groq](https://img.shields.io/badge/Groq-AI-f55036?style=for-the-badge)
+![Windows](https://img.shields.io/badge/Windows-11-0078D4?style=for-the-badge&logo=windows&logoColor=white)
+![MIT](https://img.shields.io/badge/License-MIT-success?style=for-the-badge)
 
 </p>
 
-> **Download it. Forget about it. DevDock does the rest.**
+> **Download files. Forget about organizing them. DevDock handles the rest.**
 
-
-
-# 🤔 Ever downloaded...
-
-* 🔑 SSH Keys
-* ☁️ AWS PEM Files
-* 🐳 Dockerfiles
-* ☸ Kubernetes YAMLs
-* 📦 GitHub Projects
-* 📄 PDFs
-* 🎓 College Notes
-* 🖼 Screenshots
-* 📜 Certificates
-* 📁 ZIP Archives
-
-...and then spent **10 minutes searching for them later?**
-
-### Meet **DevDock**.
-
-DevDock is an intelligent Windows application that watches your **Downloads** folder in real time.
-
-It automatically detects what you downloaded, understands what it is, creates the required folders if needed, organizes everything, keeps detailed logs, and updates a beautiful dashboard.
-
-No manual sorting.
-
-No messy Downloads folder.
-
-No wasted time.
+</div>
 
 ---
 
-# 😵 Before DevDock
+# 📖 Overview
 
-```text
+Developers download hundreds of files every week:
+
+- SSH keys
+- AWS PEM files
+- ZIP projects
+- Dockerfiles
+- Kubernetes manifests
+- Terraform files
+- PDFs
+- Screenshots
+- Certificates
+- College notes
+
+They all end up in one place:
+
+```
 Downloads/
-
-resume_final.pdf
-resume_final_final.pdf
-id_rsa
-terraform.tf
-Dockerfile
-Screenshot (245).png
-notes.pdf
-invoice.pdf
-movie.mp4
-project.zip
-another_project.zip
 ```
 
-# 😎 After DevDock
+Eventually, finding anything becomes frustrating.
 
-```text
-Downloads/
-
-Documents/
-Images/
-Videos/
-Projects/
-
-Programming/
-    Python/
-    Java/
-    JavaScript/
-
-DevOps/
-    AWS/
-    Docker/
-    Kubernetes/
-    Terraform/
-    SSH Keys/
-
-Certificates/
-
-Archives/
-```
+**DevDock** continuously watches your Downloads folder, understands every new file, automatically moves it to the correct location, logs every action, and keeps everything organized.
 
 ---
 
@@ -108,241 +55,253 @@ Archives/
 
 ## ⚡ Real-Time Monitoring
 
-DevDock watches your Downloads folder using native Windows file events.
-
-The moment a file is downloaded...
-
-DevDock immediately organizes it.
+- Watches Downloads continuously
+- Detects new files instantly
+- Organizes files automatically
 
 ---
 
 ## 🧠 Intelligent Classification
 
-Uses a hybrid classification engine.
+### Rule-Based Engine
 
-### Rule-Based Detection
+Fast offline classification for:
 
-Perfect for:
+- Docker
+- Kubernetes
+- Terraform
+- AWS
+- SSH Keys
+- Images
+- Videos
+- Archives
+- Programming files
 
-* Docker
-* Terraform
-* Kubernetes
-* AWS
-* SSH Keys
-* Programming Files
-* Images
-* Videos
-* Archives
-
-Fast.
-
-Offline.
-
-No API calls.
+No API calls required.
 
 ---
 
-### 🤖 AI Classification (Groq)
+### AI Classification (Groq)
 
-When DevDock isn't sure...
+When rules aren't enough, DevDock asks Groq AI.
 
-Groq AI understands documents like:
+Perfect for identifying:
 
-* Resume
-* Invoice
-* Certificate
-* Research Paper
-* College Notes
-* Personal Documents
+- Resume
+- Invoice
+- Certificate
+- Research Paper
+- College Notes
+- Personal Documents
 
-It returns:
+Returns:
 
-* Category
-* Confidence Score
-* Reason
+- Category
+- Confidence
+- Reasoning
 
 ---
 
 ## 📦 Smart Project Detection
 
-Downloaded a ZIP?
+Automatically detects project archives including:
 
-DevDock detects:
+- Python
+- Java
+- Node.js
+- Rust
+- Go
 
-* Python
-* Node.js
-* Java
-* Rust
-* Go
-
-Automatically creates the correct project workspace.
+Creates organized workspaces automatically.
 
 ---
 
-## 🔒 Sensitive File Protection
+## 🔒 Sensitive File Detection
 
-Automatically detects:
+Highlights important files including:
 
-* SSH Keys
-* AWS Credentials
-* Private Keys
-* Certificates
-* Password Files
-* Environment Files
-
-Sensitive files are highlighted inside the dashboard.
-
----
-
-## 📋 Daily Logs
-
-Every action is recorded.
-
-TXT Logs
-
-```text
-logs/
-
-2026/
-    July/
-        2026-07-09.txt
-```
-
-SQLite Database
-
-Every move.
-
-Every classification.
-
-Every AI decision.
-
-Nothing gets lost.
+- SSH Keys
+- AWS Credentials
+- PEM Files
+- Environment Files
+- Private Keys
+- Password Files
 
 ---
 
 ## 📊 Local Dashboard
 
-Runs locally.
+Runs locally at
 
 ```
 http://localhost:8000
 ```
 
-Dashboard includes:
+Includes:
 
-* 📈 Statistics
-* 📂 File History
-* 🔍 Search
-* 📊 Charts
-* 🧠 AI Decisions
-* 📋 Activity Logs
-* 📦 Duplicate Files
-* ⚙ Settings
+- File history
+- Search
+- Statistics
+- Activity logs
+- Charts
+- Duplicate detection
+- AI decisions
+- Settings
+
+---
+
+## 📋 Logging
+
+Every action is recorded.
+
+```
+logs/
+└── 2026/
+    └── July/
+        └── 2026-07-09.txt
+```
+
+Also stored in SQLite for analytics and history.
 
 ---
 
 ## 🔁 Startup Recovery
 
-Forgot to run DevDock yesterday?
+If DevDock wasn't running:
 
-No worries.
+- Scans Downloads
+- Detects missed files
+- Organizes everything
+- Resumes monitoring
 
-When DevDock starts:
-
-✔ Scans Downloads
-
-✔ Finds missed files
-
-✔ Organizes everything
-
-✔ Starts monitoring again
-
-Nothing is ever missed.
+Nothing gets left behind.
 
 ---
 
-# ⚙️ How DevDock Works
+# 📂 Before & After
+
+### Before
 
 ```text
-               Windows Starts
-                      │
-                      ▼
-             DevDock Starts
-                      │
-                      ▼
-         Scan Existing Downloads
-                      │
-                      ▼
-        Start Real-Time Monitoring
-                      │
-                      ▼
-          New File Downloaded
-                      │
-                      ▼
-        Rule-Based Classification
-                │
-      Match? ───┤
-        │       │
-      Yes       No
-        │       │
-        ▼       ▼
-   Organize   Groq AI
-        │       │
-        └───┬───┘
-            ▼
-    Intelligent Organizer
-            │
-      ┌─────┼──────────┐
-      ▼     ▼          ▼
+Downloads/
 
- SQLite   TXT Logs   Notification
+resume_final.pdf
+resume_final_final.pdf
+Dockerfile
+terraform.tf
+Screenshot.png
+project.zip
+notes.pdf
+id_rsa
+invoice.pdf
+```
 
-            │
-            ▼
-     Dashboard Updates
+### After
+
+```text
+Downloads/
+
+Documents/
+Images/
+Videos/
+Archives/
+Certificates/
+
+Programming/
+    Python/
+    Java/
+    JavaScript/
+
+Projects/
+
+DevOps/
+    AWS/
+    Docker/
+    Kubernetes/
+    Terraform/
+    SSH Keys/
+```
+
+---
+
+# ⚙️ Architecture
+
+```text
+Windows Startup
+      │
+      ▼
+ DevDock Starts
+      │
+      ▼
+ Scan Downloads
+      │
+      ▼
+ Watch for Changes
+      │
+      ▼
+ New File
+      │
+      ▼
+ Rule Engine
+   │       │
+Match?     No
+ │          │
+ ▼          ▼
+Organize   Groq AI
+      │
+      ▼
+ Move File
+      │
+      ▼
+ SQLite + Logs
+      │
+      ▼
+ Dashboard Update
 ```
 
 ---
 
 # 🚀 Quick Start
 
-### 1. Clone
+## Clone
 
 ```bash
 git clone https://github.com/RandomRohit-hub/DevDock.git
 cd DevDock
 ```
 
-### 2. Install dependencies
+## Install
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3. Add your Groq API key
+## Configure
 
 ```bash
 cp .env.example .env
 ```
 
-Edit `.env`:
+Add your API key.
 
 ```env
-GROQ_API_KEY=your_groq_api_key_here
+GROQ_API_KEY=your_key_here
 ```
 
-Get a free key at → [console.groq.com](https://console.groq.com)
-
-### 4. Run
+## Run
 
 ```bash
 cd backend
 python main.py
 ```
 
-Or double-click **`start.bat`**
+or simply run
 
-### 5. Open Dashboard
+```
+start.bat
+```
+
+Open:
 
 ```
 http://localhost:8000
@@ -350,58 +309,49 @@ http://localhost:8000
 
 ---
 
-# 🚀 DevDock at a Glance
+# 🚀 Capabilities
 
-* ⚡ Real-Time Monitoring
-* 🧠 AI File Classification
-* 📂 Automatic Folder Creation
-* ☁️ DevOps File Detection
-* 💻 Programming File Detection
-* 📦 Project Detection
-* 🔒 Sensitive File Detection
-* 🔁 Restore Files
-* 📋 Daily TXT Logs
-* 🗄 SQLite Database
-* 📊 Analytics Dashboard
-* 🔔 Windows Notifications
-* 🖥 System Tray Support
-* 🚀 Startup Recovery
-* ⚙ Custom Rules
+- ⚡ Real-Time Monitoring
+- 🧠 AI Classification
+- 📂 Automatic Folder Creation
+- 📦 Project Detection
+- 💻 Programming File Detection
+- ☁️ DevOps File Detection
+- 🔒 Sensitive File Detection
+- 📊 Dashboard
+- 🗄 SQLite Database
+- 📋 Daily Logs
+- 🔔 Windows Notifications
+- 🖥 System Tray
+- 🔁 Startup Recovery
+- ⚙ Custom Rules
 
 ---
 
 # 💻 Tech Stack
 
-### Desktop
+## Desktop
 
-* 🐍 Python
-* 👀 Watchdog
-* 📁 PyStray
-* 🔔 Winotify
+- Python
+- Watchdog
+- PyStray
+- Winotify
 
-### Backend
+## Backend
 
-* ⚡ FastAPI
-* 🗄 SQLite
+- FastAPI
+- SQLite
 
-### Frontend
+## Frontend
 
-* ⚛ React (CDN)
-* 🎨 Tailwind CSS (CDN)
-* 📊 Chart.js (CDN)
+- React
+- Tailwind CSS
+- Chart.js
 
-### AI
+## AI
 
-* 🧠 Groq API (`llama-3.3-70b-versatile`)
-
-### Utilities
-
-* python-dotenv
-* Pillow
-* PyPDF2
-* python-docx
-* Hashlib
-* Zipfile
+- Groq API
+- Llama 3.3 70B Versatile
 
 ---
 
@@ -411,22 +361,24 @@ http://localhost:8000
 DevDock/
 
 backend/
-    main.py
-    watcher.py
-    classifier.py
-    groq_classifier.py
-    organizer.py
-    project_detector.py
-    duplicate_detector.py
-    database.py
-    logger.py
-    dashboard.py
-    notifications.py
-    tray.py
-    security.py
-    config.py
-    static/
-        index.html
+│
+├── main.py
+├── watcher.py
+├── classifier.py
+├── groq_classifier.py
+├── organizer.py
+├── project_detector.py
+├── duplicate_detector.py
+├── database.py
+├── logger.py
+├── dashboard.py
+├── notifications.py
+├── tray.py
+├── security.py
+├── config.py
+│
+└── static/
+    └── index.html
 
 .env.example
 requirements.txt
@@ -437,42 +389,37 @@ start.bat
 
 # 🛣 Roadmap
 
-* ✅ Real-Time Monitoring
-* ✅ AI Classification
-* ✅ Dashboard
-* ✅ Duplicate Detection
-* ✅ Startup Recovery
-* ✅ DevOps Detection
-* ✅ Sensitive File Protection
-* ✅ Custom Rules
-* ✅ Restore Feature
-* ⏳ VS Code Integration
-* ⏳ GitHub Integration
-* ⏳ Plugin System
-* ⏳ Cloud Backup
-* ⏳ Cross Platform Support
-* ⏳ OneDrive Integration
+- ✅ Real-Time Monitoring
+- ✅ AI Classification
+- ✅ Dashboard
+- ✅ Duplicate Detection
+- ✅ Startup Recovery
+- ✅ Sensitive File Detection
+- ✅ Custom Rules
+- ✅ Restore Files
+- ⏳ VS Code Extension
+- ⏳ GitHub Integration
+- ⏳ Plugin System
+- ⏳ Cloud Backup
+- ⏳ OneDrive Sync
+- ⏳ Cross-Platform Support
 
 ---
 
 # 🌟 Why DevDock?
 
-Because developers should spend their time writing code...
+Developers shouldn't waste time cleaning their Downloads folder.
 
-not cleaning the Downloads folder.
-
-DevDock quietly handles the boring work while you focus on building great software.
+DevDock quietly organizes everything in the background so you can focus on writing code.
 
 ---
 
 <div align="center">
 
-## ⭐ Enjoying DevDock?
+## ⭐ Support the Project
 
-If DevDock made your workflow cleaner, consider giving this repository a **⭐ Star**.
+If DevDock improved your workflow, consider giving the repository a **⭐ Star**.
 
-It helps others discover the project and supports future development.
-
-### **Less time organizing files. More time shipping code. 🚀**
+**Less time organizing files. More time building software.**
 
 </div>
