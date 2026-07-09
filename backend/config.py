@@ -1,10 +1,16 @@
 """
 DevDock Configuration Module
 Manages all application settings, paths, and constants.
+Env vars (from .env) always take priority over settings.json.
 """
 
 import os
 import json
+from dotenv import load_dotenv
+
+# Load .env from project root (one level above backend/)
+_env_path = os.path.join(os.path.dirname(__file__), "..", ".env")
+load_dotenv(dotenv_path=_env_path, override=True)
 import logging
 from pathlib import Path
 from typing import Any, Dict, List, Optional
@@ -238,7 +244,7 @@ class Settings:
         self.load()
 
     def load(self) -> None:
-        """Load settings from disk, applying defaults for missing keys."""
+        """Load settings from disk, then overlay env vars on top."""
         DATA_DIR.mkdir(parents=True, exist_ok=True)
         if CONFIG_FILE.exists():
             try:
@@ -252,12 +258,24 @@ class Settings:
             self._data = dict(DEFAULT_SETTINGS)
             self.save()
 
+        # ── Env vars always override stored settings ──────────────────────
+        if os.getenv("GROQ_API_KEY"):
+            self._data["groq_api_key"] = os.getenv("GROQ_API_KEY")
+        if os.getenv("GROQ_MODEL"):
+            self._data["groq_model"] = os.getenv("GROQ_MODEL")
+        if os.getenv("DEVDOCK_DASHBOARD_PORT"):
+            self._data["dashboard_port"] = int(os.getenv("DEVDOCK_DASHBOARD_PORT"))
+
     def save(self) -> None:
-        """Persist settings to disk."""
+        """Persist settings to disk — never saves the Groq API key if it came from env."""
         DATA_DIR.mkdir(parents=True, exist_ok=True)
         try:
+            # Strip env-sourced keys before persisting so they stay in .env only
+            safe = dict(self._data)
+            if os.getenv("GROQ_API_KEY"):
+                safe.pop("groq_api_key", None)  # keep key in .env, not in JSON
             with open(CONFIG_FILE, "w", encoding="utf-8") as f:
-                json.dump(self._data, f, indent=2)
+                json.dump(safe, f, indent=2)
         except Exception as e:
             logger.error(f"Failed to save settings: {e}")
 

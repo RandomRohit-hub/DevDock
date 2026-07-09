@@ -40,8 +40,11 @@ dist/
 Thumbs.db
 desktop.ini
 
-# ── Secrets (never commit these) ─────────────────────
+# ── Secrets (NEVER commit these) ──────────────────────
 .env
+.env.local
+.env.*.local
 *.pem
 *.key
 credentials
+# .env.example IS committed (safe template)

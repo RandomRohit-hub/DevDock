@@ -184,10 +184,17 @@ async def toggle_rule(rule_id: int, enabled: bool):
 
 @app.get("/api/settings")
 async def get_settings():
+    import os
     data = settings.all()
-    # Never expose the raw API key to the frontend
-    if data.get("groq_api_key"):
+    # Mask the key — indicate whether it came from .env or was set manually
+    if os.getenv("GROQ_API_KEY"):
+        data["groq_api_key"] = "***loaded from .env***"
+        data["groq_key_source"] = "env"
+    elif data.get("groq_api_key"):
         data["groq_api_key"] = "***" + data["groq_api_key"][-4:]
+        data["groq_key_source"] = "settings"
+    else:
+        data["groq_key_source"] = "not set"
     return data
 
 
